@@ -10,7 +10,7 @@ class InteractiveRecord
   end
 
   def self.table_name
-    a = self.to_s.downcase.pluralize
+    self.to_s.downcase.pluralize
   end
 
   def self.column_names
