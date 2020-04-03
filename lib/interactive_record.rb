@@ -20,8 +20,6 @@ class InteractiveRecord
 
     table_info = DB[:conn].execute(sql)
     table_info.collect {|hash| hash["name"]}.compact
-
-    binding.pry
   end
 
   def table_name_for_insert
