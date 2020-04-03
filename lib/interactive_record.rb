@@ -18,6 +18,7 @@ class InteractiveRecord
 
     sql = "pragma table_info('#{table_name}')"
 
+    DB[:conn].execute(sql)
   end
 
   def table_name_for_insert
