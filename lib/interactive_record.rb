@@ -19,7 +19,7 @@ class InteractiveRecord
     sql = "pragma table_info('#{table_name}')"
 
     table_info = DB[:conn].execute(sql)
-    a = table_info.collect {|hash| hash["name"]}.compact
+    table_info.collect {|hash| hash["name"]}.compact
 
     binding.pry
   end
