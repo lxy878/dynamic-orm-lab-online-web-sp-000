@@ -20,6 +20,7 @@ class InteractiveRecord
 
     table_info = DB[:conn].execute(sql)
     a = table_info.collect {|hash| hash["name"]}
+    
     binding.pry
   end
 
