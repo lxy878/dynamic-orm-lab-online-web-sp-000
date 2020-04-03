@@ -33,8 +33,9 @@ class InteractiveRecord
   end
 
   def values_for_insert
-    a = self.class.column_names.first
-    binding.pry
+    self.class.column_names.collect do |column|
+      "#{send(column)}" unless send(column).nil?
+    end
   end
 
   def save
