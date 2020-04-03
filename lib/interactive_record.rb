@@ -33,6 +33,7 @@ class InteractiveRecord
   end
 
   def values_for_insert
+    values = []
     a = self.class.column_names.collect do |column|
       binding.pry
       "#{send(column)}" unless send(column).nil?
