@@ -34,7 +34,7 @@ class InteractiveRecord
 
   def values_for_insert
     a = self.class.column_names.first
-    binding.pry
+    # binding.pry
   end
 
   def save
