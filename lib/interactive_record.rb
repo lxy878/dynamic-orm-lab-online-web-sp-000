@@ -8,7 +8,8 @@ class InteractiveRecord
   end
 
   def self.table_name
-    
+    self.to_s.downcased
+    binding.pry
   end
 
   def self.column_names
