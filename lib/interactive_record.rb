@@ -20,6 +20,7 @@ class InteractiveRecord
 
   def initialize(attributes={})
     attributes.each do |key, value|
+      binding.pry
       self.send("#{key.to_s}=", value)
     end
   end
