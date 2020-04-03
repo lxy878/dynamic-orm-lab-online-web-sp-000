@@ -37,7 +37,7 @@ class InteractiveRecord
     self.class.column_names.each do |column|
       values << "#{send(column)}" unless send(column).nil?
     end
-    binding.pry
+    values
   end
 
   def save
