@@ -10,7 +10,7 @@ class InteractiveRecord
   end
 
   def self.table_name
-    self.to_s.downcase.pluralize
+    a = self.to_s.downcase.pluralize
     binding.pry
   end
 
