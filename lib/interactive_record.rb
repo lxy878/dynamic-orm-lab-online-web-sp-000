@@ -42,7 +42,7 @@ class InteractiveRecord
 
   def save
     sql = "INSERT INTO #{self.table_name_for_insert} (#{self.col_names_for_insert} VALUES (#{self.values_for_insert}))"
-    
+    DB[:conn].execute(sql)
   end
 
   def self.find_by_name
