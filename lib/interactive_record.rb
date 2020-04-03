@@ -6,7 +6,9 @@ require 'pry'
 class InteractiveRecord
 
   def initialize(attributes={})
-
+    attributes.each do |key, value|
+      
+    end
   end
 
   def self.table_name
