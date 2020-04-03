@@ -8,7 +8,7 @@ class InteractiveRecord
   end
 
   def self.table_name
-    self.to_s.downcased
+    self.to_s.downcase
     binding.pry
   end
 
