@@ -19,6 +19,7 @@ class InteractiveRecord
     sql = "pragma table_info('#{table_name}')"
 
     array = DB[:conn].execute(sql)
+    binding.pry
   end
 
   def table_name_for_insert
