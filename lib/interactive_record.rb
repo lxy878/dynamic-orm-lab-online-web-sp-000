@@ -37,6 +37,7 @@ class InteractiveRecord
       binding.pry
       "#{send(column)}" unless send(column).nil?
     end
+    binding.pry
   end
 
   def save
